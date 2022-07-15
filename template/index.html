@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Page - template</title>
+</head>
+<body>
+    <h1>Template Example</h1>
+    <br>
+    <button><a href="http://127.0.0.1:8000/about/">about</a></button>
+    <button><a href="http://127.0.0.1:8000/removepunc">Remove Punc</a></button>
+    <button><a href="http://127.0.0.1:8000/capitalizefirst">Capitalize First</a></button>
+    <button><a href="http://127.0.0.1:8000/newlineremove">New line remove</a></button>
+    <button><a href="http://127.0.0.1:8000/spaceremove">Space remove</a></button>
+    <button><a href="http://127.0.0.1:8000/charcount">Char count</a></button>
+    <br>
+    <hr>
+    <!-- Using python dictionary -->
+    <!-- {{name}} from {{place}} -->
+
+    <!--***************************************************************-->
+    <h3>Enter your text here: </h3>
+
+    <form action='/analyze' method='get'>
+        <textarea name="text" id="" cols="30" rows="10" style="width: 1305px; height: 174px;"></textarea>
+        <br>    
+        <input type="checkbox" name="removepunc" > Remove Punctutation <br>
+        <input type="checkbox" name="fullcaps" > UPPERCASE <br>
+        <input type="checkbox" name="newLine" > Remove new line <br>
+        <input type="checkbox" name="spaceRemove" > Remove Space <br>
+        <input type="checkbox" name="extraSpaceRemove" > Remove Extra Space <br>
+        <input type="checkbox" name="charCount" > Count Charachters 
+        <br>
+        <button type="submit">Analyze text</button>
+    </form>
+</body>
+</html>
